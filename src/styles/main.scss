@@ -1,0 +1,61 @@
+@use 'variables';
+@use 'event';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-image: linear-gradient(variables.$blue1, variables.$blue2);
+}
+
+.hero {
+    background-image: url(../images/confetes_hero.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 150px 0 150px 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .1;
+        
+    }
+
+    &__text {
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        color: variables.$corTitulo;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0);
+
+        span {
+            display: block;
+        }
+
+
+    }
+
+    @media (max-width:640px) {
+        padding: 140px 0;
+        &__text { 
+            font-size: 32px;    
+        }
+    }
+}

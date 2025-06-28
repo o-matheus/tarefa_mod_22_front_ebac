@@ -1,0 +1,27 @@
+{
+  "name": "tarefa_modulo_22",
+  "version": "1.0.0",
+  "description": "Exercicio da EBAC do módulo 22 de Front End",
+  "homepage": "https://github.com/o-matheus/tarefa_mod_22_front_ebac#readme",
+  "bugs": {
+    "url": "https://github.com/o-matheus/tarefa_mod_22_front_ebac/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o-matheus/tarefa_mod_22_front_ebac.git"
+  },
+  "license": "ISC",
+  "author": "Matheus Aguiar",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "parcel src/index.html src/scripts/main.js src/styles/main.scss",
+    "build": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "events": "^3.3.0",
+    "parcel": "^2.15.4",
+    "sharp": "^0.33.5"
+  }
+}
