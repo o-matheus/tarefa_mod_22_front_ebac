@@ -15,7 +15,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "parcel src/index.html src/scripts/main.js src/styles/main.scss",
-    "build": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
